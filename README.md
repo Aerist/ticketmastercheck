@@ -41,6 +41,12 @@ phoneNumbers=your-phone-number
 twilioNumber=twilio-sandbox-phone-number
 ```
 
-Then:
-Run `node app.js`
+Finally:
+
+Run: 
+
+```
+npm install
+node app.js
+```
 
