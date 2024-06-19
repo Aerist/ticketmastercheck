@@ -88,8 +88,9 @@ async function periodicallyFetchResults() {
             sentEmail = await sendEmailAndTextMessage(result);
             console.log("email and text sent");
             console.log("entering sleep for 5 minutes");
-            await sleep(5 * 60 * 1000);
+            await sleep(fetchedWithOffers * 5 * 60 * 1000);
         } else {
+            fetchedWithOffers = 0;
             console.log("No tickets found...")
             isEmailSent = false;
             sentEmail = undefined;
